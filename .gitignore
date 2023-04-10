@@ -3,29 +3,3 @@ Code/rbs2022-2023-master/out/
 Code/rbs2022-2023-master/src/main/**/out/
 Code/rbs2022-2023-master/src/test/**/out/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### NetBeans ###
-Code/rbs2022-2023-master/nbproject/private/
-Code/rbs2022-2023-master/nbbuild/
-Code/rbs2022-2023-master/dist/
-Code/rbs2022-2023-master/nbdist/
-Code/rbs2022-2023-master/.nb-gradle/
-
-### VS Code ###
-Code/rbs2022-2023-master/.vscode/
-
-### Mac OS ###
-Code/rbs2022-2023-master/.DS_Store
-
-Code/rbs2022-2023-master/
