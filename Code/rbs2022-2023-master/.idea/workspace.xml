@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7426b0dd-4e66-4785-9e7e-e97d54a4a898" name="Changes" comment="Attack!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/persons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/persons.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,14 +54,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/niask/OneDrive/Documents/GitHub/RBS-Project/Code/rbs2022-2023-master",
+    "last_opened_file_path": "C:/Users/niask/OneDrive/Documents/GitHub/SecureSoftwareDevelopment",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "334a9f90e952fb1dfd46c8b25662898f",
+    "spring.configuration.checksum": "04be61112ca8ab8cd45bb43e6118e48b",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -92,7 +93,8 @@
       <workItem from="1670664560282" duration="34285000" />
       <workItem from="1670775826832" duration="198000" />
       <workItem from="1670878629510" duration="443000" />
-      <workItem from="1681142962770" duration="1703000" />
+      <workItem from="1681142962770" duration="3603000" />
+      <workItem from="1681491104573" duration="1164000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1670698325007</created>

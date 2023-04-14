@@ -58,13 +58,13 @@
                             tdElement.innerHTML = person.id;
                             tableRowElement.appendChild(tdElement);
                             tdElement = document.createElement("td");
-                            tdElement.innerHTML = person.firstName;
+                            tdElement.textContent = person.firstName;
                             tableRowElement.appendChild(tdElement);
                             tdElement = document.createElement("td");
-                            tdElement.innerHTML = person.lastName;
+                            tdElement.textContent = person.lastName;
                             tableRowElement.appendChild(tdElement);
                             tdElement = document.createElement("td");
-                            tdElement.innerHTML = person.email;
+                            tdElement.textContent = person.email;
                             tableRowElement.appendChild(tdElement);
                             tdElement = document.createElement("td");
                             tdElement.innerHTML = '<a href="/persons/' + person.id + '">View profile</a>';
