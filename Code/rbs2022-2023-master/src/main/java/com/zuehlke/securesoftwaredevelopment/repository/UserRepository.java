@@ -46,7 +46,7 @@ public class UserRepository {
              ResultSet rs = statement.executeQuery(query)) {
             return rs.next();
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.warn("Login failed for user" + username,e);
         }
         return false;
     }

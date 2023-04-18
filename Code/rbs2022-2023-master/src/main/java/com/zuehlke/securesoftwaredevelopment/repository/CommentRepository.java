@@ -33,7 +33,7 @@ public class CommentRepository {
             statement.setString(3,comment.getComment());
             statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.info("Comment has been added");
         }
     }
 

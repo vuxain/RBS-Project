@@ -50,6 +50,9 @@ public class PersonRepository {
                 personList.add(createPersonFromResultSet(rs));
             }
         }
+        catch (SQLException ex) {
+            LOG.warn("WARNING: Didn't find searchTerm " + searchTerm, ex);
+        }
         return personList;
     }
 
@@ -74,6 +77,7 @@ public class PersonRepository {
              Statement statement = connection.createStatement();
         ) {
             statement.executeUpdate(query);
+            LOG.info("INFO: User  " + personId + " has been deleted");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -99,6 +103,7 @@ public class PersonRepository {
             statement.setString(1, firstName);
             statement.setString(2, email);
             statement.executeUpdate();
+            LOG.info("INFO: User  " + personUpdate.getId() + " has been updated");
         } catch (SQLException e) {
             e.printStackTrace();
         }
