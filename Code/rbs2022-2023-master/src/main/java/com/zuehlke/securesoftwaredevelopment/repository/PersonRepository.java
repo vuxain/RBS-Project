@@ -1,6 +1,7 @@
 package com.zuehlke.securesoftwaredevelopment.repository;
 
 import com.zuehlke.securesoftwaredevelopment.config.AuditLogger;
+import com.zuehlke.securesoftwaredevelopment.config.DatabaseAuthenticationProvider;
 import com.zuehlke.securesoftwaredevelopment.config.Entity;
 import com.zuehlke.securesoftwaredevelopment.domain.Person;
 import org.slf4j.Logger;
@@ -78,6 +79,7 @@ public class PersonRepository {
         ) {
             statement.executeUpdate(query);
             LOG.info("INFO: User  " + personId + " has been deleted");
+            AuditLogger.getAuditLogger(DatabaseAuthenticationProvider.class).audit("Deleted user with Id:'" + personId + "'");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -104,6 +106,8 @@ public class PersonRepository {
             statement.setString(2, email);
             statement.executeUpdate();
             LOG.info("INFO: User  " + personUpdate.getId() + " has been updated");
+            AuditLogger.getAuditLogger(DatabaseAuthenticationProvider.class).audit("Updated user with Id:'" + personUpdate.getId() + "'");
+
         } catch (SQLException e) {
             e.printStackTrace();
         }

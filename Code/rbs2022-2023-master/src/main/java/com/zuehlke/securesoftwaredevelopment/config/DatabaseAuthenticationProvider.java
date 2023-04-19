@@ -40,11 +40,13 @@ public class DatabaseAuthenticationProvider implements AuthenticationProvider {
 
         boolean success = validCredentials(username, password);
         if (success) {
+            AuditLogger.getAuditLogger(DatabaseAuthenticationProvider.class).audit("Login successful for username '" + username + "'");
             User user = userRepository.findUser(username);
             List<GrantedAuthority> grantedAuthorities = getGrantedAuthorities(user);
             return new UsernamePasswordAuthenticationToken(user, password, grantedAuthorities);
         }
-
+        AuditLogger.getAuditLogger(DatabaseAuthenticationProvider.class)
+                .audit("Login failed for username '" + username + "'");
         throw new BadCredentialsException(String.format(PASSWORD_WRONG_MESSAGE, username, password));
     }
 
