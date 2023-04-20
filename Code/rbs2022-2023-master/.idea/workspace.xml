@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7426b0dd-4e66-4785-9e7e-e97d54a4a898" name="Changes" comment="Attack!">
-      <change beforePath="$PROJECT_DIR$/../../Attacks/RBS Izveštaj.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Attacks/RBS Izveštaj.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/MoviesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/MoviesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/RatingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/RatingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/movies.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/movies.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/persons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/persons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/person.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +101,7 @@
       <workItem from="1681818021011" duration="7743000" />
       <workItem from="1681915624338" duration="2732000" />
       <workItem from="1681920896170" duration="13613000" />
+      <workItem from="1681999346338" duration="3453000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1670698325007</created>

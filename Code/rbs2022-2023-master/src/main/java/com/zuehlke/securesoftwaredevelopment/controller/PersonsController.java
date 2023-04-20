@@ -45,7 +45,10 @@ public class PersonsController {
     }
 
     @GetMapping("/myprofile")
-    public String self(Model model, Authentication authentication) {
+    @PreAuthorize("hasAuthority('VIEW_MY_PROFILE')")
+    public String self(Model model, Authentication authentication, HttpSession session) {
+        String csrf = session.getAttribute("CSRF_TOKEN").toString();
+        model.addAttribute("CSRF_TOKEN", session.getAttribute("CSRF_TOKEN"));
         User user = (User) authentication.getPrincipal();
         model.addAttribute("person", personRepository.get("" + user.getId()));
         return "person";
@@ -60,16 +63,30 @@ public class PersonsController {
     }
 
     @PostMapping("/update-person")
+    @PreAuthorize("hasAuthority('UPDATE_PERSON')")
     public String updatePerson(Person person, HttpSession session, @RequestParam("csrfToken") String csrfToken)
     throws AccessDeniedException
     {
+
+
+        System.out.println(person.getFirstName());
         String csrf = session.getAttribute("CSRF_TOKEN").toString();
         if (!csrf.equals(csrfToken)) {
+            System.out.println("token");
             throw new AccessDeniedException("Zabranjen pristup");
         }
+
+        System.out.println("aaaaa");
         personRepository.update(person);
-        //System.out.println(SecurityUtil.getCurrentUser().getAuthorities().toString());
-        return "redirect:/movies/";
+
+        if(Integer.toString(SecurityUtil.getCurrentUser().getId()).equals(person.getId()))
+        {
+            return "redirect:/myprofile";
+        }
+        else
+        {
+            return "redirect:/persons/" + person.getId();
+        }
     }
 
     @GetMapping("/persons")

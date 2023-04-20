@@ -11,23 +11,29 @@
 <body>
 <div layout:fragment="content">
     <h1>Profile</h1>
-    <div class="row">
+    <div class="row" >
         <form method="POST" action="/update-person" class="col-5">
             <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" name="firstName" class="form-control" id="firstName" th:value="${person.firstName}">
+                <input type="text" name="firstName" class="form-control" id="firstName" th:value="${person.firstName}"
+                       th:disabled="${not #authorization.expression('hasAuthority(''UPDATE_PERSON'')')}">
+
             </div>
             <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" class="form-control" id="lastName" th:value="${person.lastName}">
+                <input type="text" name="lastName" class="form-control" id="lastName" th:value="${person.lastName}"
+                       th:disabled="${not #authorization.expression('hasAuthority(''UPDATE_PERSON'')')}">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" name="email" class="form-control" id="email" th:value="${person.email}">
+                <input type="text" name="email" class="form-control" id="email" th:value="${person.email}"
+                       th:disabled="${not #authorization.expression('hasAuthority(''UPDATE_PERSON'')')}">
             </div>
+            <input type="hidden" name = "csrfToken" th:value="${CSRF_TOKEN}">
             <input type="hidden" name="id" class="form-control" id="id" th:value="${person.id}">
-            <input type="hidden" name="csrfToken" th:value="${CSRF_TOKEN}">
-            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="submit" class="btn btn-primary"
+                    th:disabled="${not #authorization.expression('hasAuthority(''UPDATE_PERSON'')')}">
+                Save</button>
         </form>
     </div>
 
